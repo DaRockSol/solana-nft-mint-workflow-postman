@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "f4d1de8c-1da5-4c45-ab1c-7a6444b290c4",
+		"name": "solana-nft-token-metadata",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getMinimumBalanceForRentExemption",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":0,\"jsonrpc\":\"2.0\",\"method\":\"getMinimumBalanceForRentExemption\",\"params\":[82]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8899",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8899"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getVersion",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":1,\"jsonrpc\":\"2.0\",\"method\":\"getVersion\",\"params\":null}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8899",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8899"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getLatestBlockhash",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":2,\"jsonrpc\":\"2.0\",\"method\":\"getLatestBlockhash\",\"params\":[{\"commitment\":\"confirmed\"}]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8899",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8899"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sendTransaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":3,\"jsonrpc\":\"2.0\",\"method\":\"sendTransaction\",\"params\":[\"<encoded-transaction-metadata>\",{\"encoding\":\"base64\",\"maxRetries\":null,\"preflightCommitment\":\"confirmed\",\"skipPreflight\":false}]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8899",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8899"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSignatureStatuses",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":4,\"jsonrpc\":\"2.0\",\"method\":\"getSignatureStatuses\",\"params\":[[\"4HK4sgJmEhPjSUjdYkLCFSKp63Rha5qTdjwt5JhbFobSiH6dxgPi11MMgsW1PJsRkuJ4ikBsvTGGgG1ZoHg5HfxT\"]]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8899",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8899"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "isBlockhashValid",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":5,\"jsonrpc\":\"2.0\",\"method\":\"isBlockhashValid\",\"params\":[\"4Riec94QCnGRAtLWnLxfuMPVkAyT4ToViPrFo69Zvk9y\",{\"commitment\":\"processed\"}]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8899",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8899"
+				}
+			},
+			"response": []
+		}
+	]
+}
